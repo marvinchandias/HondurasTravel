@@ -1,7 +1,6 @@
 $(document).ready(function(){
    
-   $("#ContenedorInformacion").html("<iframe src='Pages/home.html' scrolling='no'></iframe>");
-
+   
      //Primer Barra 
      $('.Home').click(function(event){
       	  alert('Home');	
@@ -50,6 +49,11 @@ $(document).ready(function(){
           $("iframe").remove();
           //Coloca el nuevo contenido a la pagina sobre los boletines 
           $("#ContenedorInformacion").html("<iframe src='Pages/pruebasBoletines/index2.html' scrolling='no'></iframe>");
+
+           var posicion = $("#ContenedorInformacion").offset().top;
+            $("html, body").animate({
+                scrollTop: posicion
+            }, 2000); 
            
     });
   
