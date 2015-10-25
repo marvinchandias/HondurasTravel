@@ -1,6 +1,7 @@
 $(document).ready(function(){
    
-   
+   $("#ContenedorInformacion").html("<iframe src='Pages/home.html' scrolling='no'></iframe>");
+
      //Primer Barra 
      $('.Home').click(function(event){
       	  alert('Home');	
