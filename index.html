@@ -7,6 +7,7 @@
        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css"> 
        <link rel="icon" type="image/png" href="/IMAGE/Icono.ico"/>
        <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+
        <title>Honduras Traveling</title> 
         
    </head> 
@@ -23,7 +24,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="">Honduras Traveling</a>
+      <a class="navbar-brand Home" role="button">Honduras Traveling</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -31,16 +32,16 @@
         <!--Boton de iniciar sesion--> 
         <li><a id="modal"href="Pages/Login/modalLogin.html" role="button" data-toggle="modal" data-target="#login-modal" class="">Iniciar Sesion</a></li>
         <!--boton de registrar sesion-->
-        <li><a href="#" role="button" data-toggle="" data-target="#login-modal" class="">Crear Cuenta</a></li>
+        <li><a id="btnCrearCuenta"role="button" data-toggle="" data-target="#login-modal" class="">Crear Cuenta</a></li>
         <!--Fin de booton de registro-->
         <!--inicio de boton de español he ingles-->
-        <li id="" role="button"><a href="">ESP/ENG</a></li>
+        <li id="btnlenguaje" role="button"><a>ESP/ENG</a></li>
       </ul>
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Buscar">
         </div>
-        <button type="submit" class="btn btn-default">Buscar</button>
+        <button id="btnBuscar" type="submit" class="btn btn-default">Buscar</button>
       </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -49,6 +50,8 @@
 
 
 <!--slider-->
+
+    
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -68,7 +71,6 @@
       <div class="carousel-caption">
       </div>
     </div>
-
      <div class="item">
       <img src="IMAGE/Slide/3.jpg" alt="...">
       <div class="carousel-caption">
@@ -84,12 +86,6 @@
       <div class="carousel-caption">
       </div>
     </div>
-
-
-
-
-
-
   </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -104,11 +100,13 @@
 <!--fin de Slider-->
 
 
+
+
 <!--inicio  de segunda barra-->
     <div id="wrap">
     <div class="navbar navbar-custom navbar-inverse nav content" id="topNav">
         <div class="container">
-            <div class="navbar-header"><a class="navbar-brand" href="#">Inicio</a>
+            <div class="navbar-header"><a  class="navbar-brand Home" role="button">Inicio</a>
             </div>
             <ul class="nav navbar-nav">
                 <li><a id="btnBoletines" role="button" class="">Boletines</a></li>
@@ -117,17 +115,17 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Destinos<span class="caret"></span></a>
            <ul class="dropdown-menu">
             <li><a id="btnPlayas" role="button">Playas</a></li>
-            <li><a href="#">Ciudades Coloniales</a></li>
-            <li><a href="#">Destinos Naturales</a></li>
+            <li><a id="btnCiudades" role="button">Ciudades Coloniales</a></li>
+            <li><a id="btnDestinosnaturales" role="button">Destinos Naturales</a></li>
           </ul>
         </li>
 
         <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hoteles<span class="caret"></span></a>
            <ul class="dropdown-menu">
-            <li><a href="#">1 Estrella</a></li>
-            <li><a href="#">2 Estrellas</a></li>
-            <li><a href="#">3 Estrellas</a></li>
+            <li><a id="btnEstrella1" role="button">1 Estrella</a></li>
+            <li><a id="btnEstrella2" role="button">2 Estrellas</a></li>
+            <li><a id="btnEstrella3" role="button">3 Estrellas</a></li>
           </ul>
         </li>
             </ul>
