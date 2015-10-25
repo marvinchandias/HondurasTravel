@@ -1,5 +1,6 @@
 $(document).ready(function(){
    
+      $("#ContenedorInformacion").html("<iframe src='Pages/home.html' scrolling='no'></iframe>");
    
      //Primer Barra 
      $('.Home').click(function(event){
@@ -113,6 +114,26 @@ $(document).ready(function(){
           //$("#ContenedorInformacion").html("<iframe src='DirecionDepagina' scrolling='no'></iframe>");
            
     });
+
+    //Flecha hacia arriba
+    $(document).on("scroll", function(){
+            var desplazamientoActual = $(document).scrollTop();
+            var controlArriba = $("#irarriba");
+            if(desplazamientoActual > 200 && controlArriba.css("display") == "none"){
+                controlArriba.fadeIn(500);
+            }
+            if(desplazamientoActual < 200 && controlArriba.css("display") == "block"){
+                controlArriba.fadeOut(500);
+            }
+        });
+
+
+        $("#irarriba a").on("click", function(e){
+            e.preventDefault();
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000); 
+        });
   
 
 });
