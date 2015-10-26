@@ -119,11 +119,17 @@ $(document).ready(function(){
     $(document).on("scroll", function(){
             var desplazamientoActual = $(document).scrollTop();
             var controlArriba = $("#irarriba");
-            if(desplazamientoActual > 200 && controlArriba.css("display") == "none"){
+            var controlBarra  = $("#topNav");
+            console.log("Estoy en " , desplazamientoActual); 
+            if(desplazamientoActual > 600 && controlArriba.css("display") == "none"){
                 controlArriba.fadeIn(500);
+                 controlBarra.css('top', '0px');
+                 controlBarra.css('position', 'fixed');
             }
-            if(desplazamientoActual < 200 && controlArriba.css("display") == "block"){
+            if(desplazamientoActual < 600 && controlArriba.css("display") == "block"){
                 controlArriba.fadeOut(500);
+                controlBarra.css('position', 'relative');
+               
             }
         });
 
